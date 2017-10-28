@@ -23,6 +23,8 @@ contract Saludappble {
     mapping (uint => Doctor) doctors;
     public uint dCount = 0;
 
+    modifier onlyOwner
+
     function create Patient(string id, string name){
 
         patients[pCount] = Patient(id, name);
